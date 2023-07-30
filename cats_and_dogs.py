@@ -49,13 +49,14 @@ def upload_file():
 
     return render_template("index.html",answer="")
 
-"""
+
 # 自PCでのチェック用
 if __name__ == "__main__":
     app.run()
 """
-# remote: warning: File model.h5 is 92.29 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+
 # Render公開用
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 8080))
     app.run(host ='0.0.0.0',port = port)
+"""
